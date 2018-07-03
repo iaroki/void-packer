@@ -1,7 +1,7 @@
 {
     "variables": {
         "cloud_token": "{{ env `ATLAS_TOKEN` }}",
-        "version": "1.0.{{timestamp}}"
+        "version": "20170703.0"
     },
 
     "builders": [
@@ -11,7 +11,7 @@
                 ["modifyvm", "{{.Name}}", "--memory", "512"],
                 ["modifyvm", "{{.Name}}", "--cpus", "1"]
             ],
-            "iso_url": "http://localhost:8000/void-live-x86_64-20171007.iso",
+            "iso_url": "https://repo.voidlinux.eu/live/current/void-live-x86_64-20171007.iso",
             "iso_checksum": "a425a42481f22fc22562733c5e32e0e054e80ba68c25236850ec00ea2a31264e",
             "iso_checksum_type": "sha256",
             "boot_wait": "5s",
