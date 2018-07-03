@@ -19,3 +19,6 @@ chown -R vagrant /home/vagrant/.ssh
 
 # Install NFS for Vagrant
 xbps-install -Sy nfs-utils
+
+# Clean XBPS cache
+rm -rf /var/cache/xbps/*
