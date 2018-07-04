@@ -32,9 +32,13 @@
 
     "provisioners": [
         {
+            "type": "file",
+            "source": "scripts/install.sh",
+            "destination": "/root/install.sh"
+        },
+        {
             "type": "shell",
-            "script": "scripts/vagrant.sh",
-            "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S bash '{{.Path}}'"
+            "script": "scripts/bootstrap.sh"
         }
     ],
 
