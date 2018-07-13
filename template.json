@@ -1,7 +1,7 @@
 {
     "variables": {
         "cloud_token": "{{ env `ATLAS_TOKEN` }}",
-        "version": "20180704.0"
+        "version": "20180713.0"
     },
 
     "builders": [

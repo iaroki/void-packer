@@ -55,4 +55,8 @@ echo ">> Determine kernel version"
 #linux_kernel=`xbps-query --regex -Rs '^linux[[:digit:]]\.[-0-9\._]*$' | cut -f2 -d' ' | sort -V | tail -n1`
 
 echo ">> Configure Linux kernel"
-xbps-reconfigure -f linux4.16 #${linux_kernel}
+xbps-reconfigure -f linux4.17 #${linux_kernel}
+
+echo ">> /var permissions"
+chmod 755 /var
+
