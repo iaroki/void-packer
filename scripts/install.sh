@@ -57,6 +57,9 @@ echo ">> Determine kernel version"
 echo ">> Configure Linux kernel"
 xbps-reconfigure -f linux4.17 #${linux_kernel}
 
+echo ">> Install bash-completion"
+xbps-install -Sy -R http://repo.voidlinux.eu/current bash-completion
+
 echo ">> /var permissions"
 chmod 755 /var
 
